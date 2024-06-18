@@ -406,3 +406,40 @@ footer {
         font-size: 24px; /* Smaller text on smaller screens */
     }
 }
+
+/* Hamburger Menu Button */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #333;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #fff;
+        padding: 10px;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px;
+    }
+}
