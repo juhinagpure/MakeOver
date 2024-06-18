@@ -71,11 +71,12 @@ section.hero img {
 
 section.inner-radiance {
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px;
 }
 
 section.inner-radiance h2 {
-    font-size: 2em;
+    font-size: 24px;
+    color: #333;
     margin-bottom: 20px;
 }
 
@@ -84,28 +85,26 @@ section.inner-radiance h2 span {
 }
 
 section.inner-radiance .explore-services {
-    background-color: #F5D1BB;
-    color: #000;
-    border: none;
     padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 40px;
 }
 
 section.inner-radiance .service-cards {
     display: flex;
     justify-content: center;
-    gap: 70px;
-    margin-bottom: 40px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 section.inner-radiance .service-cards .card {
-    background-color: #222;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    width: 200px;
+    width: calc(25% - 20px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
 }
 
 section.inner-radiance .service-cards .card img {
@@ -365,5 +364,21 @@ section.testimonials {
     .nav-links li {
         text-align: center;
         padding: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .inner-radiance .card {
+        width: calc(50% - 20px); /* 2 columns layout on smaller desktops and tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .inner-radiance h2 {
+        font-size: 20px;
+    }
+
+    .inner-radiance .card {
+        width: 100%; /* Full width on mobile devices */
     }
 }
