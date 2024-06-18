@@ -92,6 +92,8 @@ section.inner-radiance .explore-services {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom:40px;
+    margin-top: 20px;
 }
 
 section.inner-radiance .service-cards {
